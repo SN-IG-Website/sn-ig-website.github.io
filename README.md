@@ -1,4 +1,4 @@
-# SN-IG Website
+# SN/IG Hall Website
 
 Hall Website of SN/IG Hall
 
