@@ -30,7 +30,7 @@ import Warden from './components/Warden';
 function App() {
   return (
     <>
-     <BrowserRouter basename='/index.html'>
+     <BrowserRouter>
       <Switch>
           <Route exact path="/" component={Homepage}/>
           <Route exact path="/gallery" component={Galleryfront}/>
@@ -38,7 +38,6 @@ function App() {
           <Route path="/about" component={AboutComp}/>
           <Route path="/infrastructure" component={infra}/>
           <Route path="/alumni" component={Alumni}/>
-
           <Route path="/illu" component={gallerback_illu}/>
           <Route path="/republic" component={gallerback_republicday}/>
           <Route path="/grand-dinner" component={galleryback_granddinner}/>
@@ -48,12 +47,9 @@ function App() {
           <Route path="/holi" component={galleryback_holi}/>
           <Route path="/farewell" component={galleryback_farewell}/>
           <Route path="/saraswati-puja" component={galleryback_saraswatipuja}/>
-          
           <Route path="/hall" component={Hall}/>
           <Route path="/teams2" component={Teams2}/>
           <Route path="/warden" component={Warden}/>
-         
-
       </Switch>
      </BrowserRouter>
     </>
