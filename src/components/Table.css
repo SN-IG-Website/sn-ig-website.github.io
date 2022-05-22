@@ -1,0 +1,55 @@
+.heading-ex h2{
+    font-size: 3em;
+    display: block;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+.heading-ex h4 {
+    display: inline-block;
+    padding-bottom: 20px;
+    position: relative;
+    text-transform: capitalize;
+    z-index: 1;
+  }
+  .heading-ex h4::before {
+    background: #ff5a6e none repeat scroll 0 0;
+    bottom: 0;
+    content: "";
+    height: 2px;
+    left: 50%;
+    margin-left: -25px;
+    position: absolute;
+    width: 50px;
+  }
+  .heading-ex h2 span {
+    color: #ff5a6e;
+  }
+  .heading-ex {
+    margin-bottom: 60px;
+    overflow: hidden;
+    margin-top: -5px;
+  }
+  .table-linkedin:hover{
+    color: #ff5a6e;
+  }
+  .col{
+    text-align: center;
+    width: 25% ;
+    padding: 15px;
+    color: black;
+  }
+  .table-linkedin{
+      color: black;
+  }
+
+  .table-row:hover{
+    background-image: linear-gradient(150deg,#BF9270,#EDCDBB);
+    color: #BF9270;
+  }
+  .table-row{
+      padding: 10px;
+      background-image: linear-gradient(150deg,#E3B7A0,#FFEDDB);
+      width: 70%;
+      font-size: 18px;
+  }

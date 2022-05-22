@@ -1,0 +1,19 @@
+.me-auto{
+    font-size: larger;
+    font-weight: 500;
+    
+}
+.content{
+    background-color: #26272b;
+    padding-left: 0px;
+}
+.nav-bar{
+    background-color: #26272b;
+}
+
+.navLink{
+    color: black;
+}
+.content container{
+    margin-left: 0px;
+}
