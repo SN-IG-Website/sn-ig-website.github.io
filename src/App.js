@@ -1,11 +1,10 @@
-
 import './App.css';
 import Homepage from './pages/homepage';
 import galleryback_granddinner from './components/galleryback_granddinner';
 
 // import Gallery from './pages/gallery';
 import Galleryfront from './components/galleryfront';
-import { Route,BrowserRouter, Switch} from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import AboutComp from './components/AboutComp';
 //import InfraComp from './components/InfraComp';
 import infra from './components/infra';
@@ -30,28 +29,26 @@ import Warden from './components/Warden';
 function App() {
   return (
     <>
-     <BrowserRouter>
-      <Switch>
-          <Route exact path="/" component={Homepage}/>
-          <Route path="/gallery" component={Galleryfront}/>
-          <Route path="/freshers" component={Galleryback}/>
-          <Route path="/about" component={AboutComp}/>
-          <Route path="/infrastructure" component={infra}/>
-          <Route path="/alumni" component={Alumni}/>
-          <Route path="/illu" component={gallerback_illu}/>
-          <Route path="/republic" component={gallerback_republicday}/>
-          <Route path="/grand-dinner" component={galleryback_granddinner}/>
-          <Route path="/class-song" component={galleryback_classsong}/>
-          <Route path="/achievements" component={AchievComp}/>
-          <Route path="/alumni-meet" component={galleryback_alumnimeet}/>
-          <Route path="/holi" component={galleryback_holi}/>
-          <Route path="/farewell" component={galleryback_farewell}/>
-          <Route path="/saraswati-puja" component={galleryback_saraswatipuja}/>
-          <Route path="/hall" component={Hall}/>
-          <Route path="/teams2" component={Teams2}/>
-          <Route path="/warden" component={Warden}/>
-      </Switch>
-     </BrowserRouter>
+      <Routes>
+          <Route exact path="/" element={<Homepage />}/>
+          <Route path="gallery" element={<Galleryfront />}/>
+          <Route path="freshers" element={<Galleryback />}/>
+          <Route path="about" element={<AboutComp />}/>
+          <Route path="infrastructure" component={infra}/>
+          <Route path="/alumni" element={<Alumni />}/>
+          <Route path="illu" component={gallerback_illu}/>
+          <Route path="republic" component={gallerback_republicday}/>
+          <Route path="grand-dinner" component={galleryback_granddinner}/>
+          <Route path="class-song" component={galleryback_classsong}/>
+          <Route path="achievements" element={<AchievComp />}/>
+          <Route path="alumni-meet" component={galleryback_alumnimeet}/>
+          <Route path="holi" component={galleryback_holi}/>
+          <Route path="farewell" component={galleryback_farewell}/>
+          <Route path="saraswati-puja" component={galleryback_saraswatipuja}/>
+          <Route path="hall" element={<Hall />}/>
+          <Route path="teams2" element={<Teams2 />}/>
+          <Route path="warden" element={<Warden />}/>
+      </Routes>
     </>
   );
 }
