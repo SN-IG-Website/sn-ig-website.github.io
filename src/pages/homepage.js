@@ -12,10 +12,10 @@ function homepage() {
   return (
       <div className='homepage'>
           <NavbarComp/>
-          <CarouselComp/>
-          <AboutComp/>
-          <Infra/>
-          <Footer/>
+         <CarouselComp/>
+         <AboutComp/>
+         <Infra/>
+         <Footer/>
       </div>
   )
 }

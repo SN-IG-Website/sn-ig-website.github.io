@@ -1,7 +1,6 @@
 import React from "react";
 
 import "./NavbarComp.css";
-import { Link } from "react-router-dom";
 import { Navbar, Nav, NavDropdown, Container } from "react-bootstrap";
 import logo from "./logo.png";
 // import AboutComp from "./AboutComp";
@@ -28,9 +27,9 @@ function NavbarComp() {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Link style={{
+              <Nav.Link style={{
                 color: "#FBE5E5"
-              }} to="/">Home</Link>
+              }} href="/">Home</Nav.Link>
               {/* <NavDropdown title="" id="basic-nav-dropdown">
                 <NavDropdown.Item href="#aboutsnig">About</NavDropdown.Item>
                 <NavDropdown.Item href="#infrasnig">
@@ -55,24 +54,24 @@ function NavbarComp() {
           <NavDropdown.Item href="warden">Wardens</NavDropdown.Item>
           <NavDropdown.Item href="hall">Student Representatives</NavDropdown.Item>
         </NavDropdown>
-              <Link
+              <Nav.Link
                 style={{
                   color: "#FBE5E5"
-                }} className="navLink" to="alumni">Alumni</Link>
+                }} className="navLink" href="alumni">Alumni</Nav.Link>
               {/* <NavDropdown title="" id="basic-nav-dropdown">
                 <NavDropdown.Item href="#Distinguished Alumni Awards">Distinguished Alumni Awards</NavDropdown.Item>
                 <NavDropdown.Item href="#Distinguished Service Awards">Distinguished Service Awards</NavDropdown.Item>
                 <NavDropdown.Item href="#Young Alumni Achiever Awards">Young Alumni Achiever Awards</NavDropdown.Item>
               </NavDropdown> */}
-              <Link style={{
+              <Nav.Link style={{
                 color: "#FBE5E5"
-              }} href="gallery">Gallery</Link>
-              <Link style={{
+              }} href="gallery">Gallery</Nav.Link>
+              <Nav.Link style={{
                 color: "#FBE5E5"
-              }} to="achievements">Achievements</Link>
-              <Link style={{
+              }} href="achievements">Achievements</Nav.Link>
+              <Nav.Link style={{
                 color: "#FBE5E5"
-              }} to="teams2">Web Team</Link>
+              }} href="teams2">Web Team</Nav.Link>
 
 
             </Nav>

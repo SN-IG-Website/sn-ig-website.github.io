@@ -5,7 +5,7 @@ import galleryback_granddinner from './components/galleryback_granddinner';
 
 // import Gallery from './pages/gallery';
 import Galleryfront from './components/galleryfront';
-import { Route,BrowserRouter, Switch} from "react-router-dom";
+import { Route,BrowserRouter,Switch} from "react-router-dom";
 import AboutComp from './components/AboutComp';
 //import InfraComp from './components/InfraComp';
 import infra from './components/infra';
@@ -29,15 +29,19 @@ import Warden from './components/Warden';
 
 function App() {
   return (
+    <>
      <BrowserRouter>
       <Switch>
-          <Route path="/" component={Homepage}/>
+          <Route path="/">
+            <Homepage />
+          </Route>
           <Route path="/gallery" component={Galleryfront}/>
           <Route path="/freshers" component={Galleryback}/>
           <Route path="/about" component={AboutComp}/>
           <Route path="/infrastructure" component={infra}/>
-          <Route path="/alumni" component={Alumni}/>
-
+          <Route path="/alumni">
+            <Alumni />
+          </Route>
           <Route path="/illu" component={gallerback_illu}/>
           <Route path="/republic" component={gallerback_republicday}/>
           <Route path="/grand-dinner" component={galleryback_granddinner}/>
@@ -47,14 +51,13 @@ function App() {
           <Route path="/holi" component={galleryback_holi}/>
           <Route path="/farewell" component={galleryback_farewell}/>
           <Route path="/saraswati-puja" component={galleryback_saraswatipuja}/>
-          
           <Route path="/hall" component={Hall}/>
           <Route path="/teams2" component={Teams2}/>
           <Route path="/warden" component={Warden}/>
-         
-
       </Switch>
      </BrowserRouter>
+    </>
+
   );
 }
 
