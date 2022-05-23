@@ -4,7 +4,7 @@ import AlumniCard from '../components/AlumniCards';
 import NavbarComp from '../components/NavbarComp';
 import Footer from '../components/footer';
 
-function alumni() {
+function Alumni() {
     return (
       <div>
         <NavbarComp/>
@@ -14,4 +14,4 @@ function alumni() {
     )
   }
   
-  export default alumni
+  export default Alumni

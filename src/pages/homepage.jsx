@@ -8,7 +8,7 @@ import Footer from '../components/footer';
 import Infra from '../components/infra';
 import "./homepage.css";
 
-function homepage() {
+function Homepage() {
   return (
       <div className='homepage'>
           <NavbarComp/>
@@ -20,4 +20,4 @@ function homepage() {
   )
 }
 
-export default homepage
+export default Homepage
