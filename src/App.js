@@ -32,7 +32,7 @@ function App() {
     <>
      <BrowserRouter>
       <Switch>
-          <Route path="/" component={Homepage}/>
+          <Route exact path="/" component={Homepage}/>
           <Route path="/gallery" component={Galleryfront}/>
           <Route path="/freshers" component={Galleryback}/>
           <Route path="/about" component={AboutComp}/>
@@ -53,7 +53,6 @@ function App() {
       </Switch>
      </BrowserRouter>
     </>
-
   );
 }
 
