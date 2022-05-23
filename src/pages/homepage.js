@@ -8,16 +8,16 @@ import Footer from '../components/footer';
 import Infra from '../components/infra';
 import "./homepage.css";
 
-function Homepage() {
+function homepage() {
   return (
       <div className='homepage'>
           <NavbarComp/>
-         <CarouselComp/>
-         <AboutComp/>
-         <Infra/>
-         <Footer/>
+          <CarouselComp/>
+          <AboutComp/>
+          <Infra/>
+          <Footer/>
       </div>
   )
 }
 
-export default Homepage
+export default homepage
